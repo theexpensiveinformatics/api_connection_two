@@ -5,7 +5,7 @@ class Api {
   Dio _dio = Dio();
 
   Api() {
-    _dio.options.baseUrl = '';
+    _dio.options.baseUrl = 'https://jsonplaceholder.typicode.com';
     _dio.interceptors.add(PrettyDioLogger(
         requestBody: true,
         requestHeader: true,
