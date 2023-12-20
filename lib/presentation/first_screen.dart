@@ -20,7 +20,7 @@ class _FirstScreenState extends State<FirstScreen> {
               onPressed: () {
                 todo_bloc.add(TodoFetchEvent());
               },
-              child: Text('Get Todos')),
+              child: Text('Get Todo')),
           BlocConsumer<TodoBlocBloc, TodoBlocState>(
             listener: (context, state) {},
             builder: (context, state) {
